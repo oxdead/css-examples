@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    color: #33CCDD;
+    font-weight: 600;
+    box-sizing: border-box;
+    opacity: 0.8;
+}
+
+h2{
+    color: #33CCDD;
+    font-weight: 600;
+    box-sizing: border-box;
+    opacity: 0.8;
+}
+
+h3{
+    color: #33CCDD;
+    font-weight: 600;
+    box-sizing: border-box;
+    opacity: 0.8;
+}
+
+p{
+    color: #FFFFFF;
+    text-shadow: 1px 1px 4px #006666;
+    opacity: 0.8;
+}
+
+.glass {
+    z-index: 2;
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    backdrop-filter: blur(1rem);
+    border-radius: 2rem;
+    display: flex;
+}
+
+
+.circle1, .circle2 {
+    z-index: 1;
+    position: absolute;
+    background-color: white;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.3));
+    border-radius: 50%;
+    height: 12rem;
+    width: 12rem;
+    
+    
+}
+
+.circle1{
+    top: 5%;
+    right: 15%;
+}
+
+.circle2 {
+    bottom: 5%;
+    left: 11%;
+}
+
+
+.dashboard{
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    border-radius: 2rem 0rem 0rem 2rem;
+    flex-grow: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.pro{
+    height: 5rem;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 2rem;
+    padding: 2rem;
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    text-shadow: 1px 1px 4px #FFFFFF;
+    
+}
+
+
+.link {
+    padding: .8rem;
+}
+
+/* font-size makes fontawesome icons bigger */
+.fa.fa-user-circle {
+    color: #117799;
+    font-size: 100px;
+    padding: 1rem;
+}
+
+.fa.fa-twitch, .fa.fa-steam, .fa.fa-dice-d6, .fas.fa-heart {
+    color: #117799;
+    font-size:28px;
+    padding: .2rem;
+}
+
+.fas.fa-robot, .fas.fa-user-astronaut, .fas.fa-rocket {
+    color: #117799;
+    font-size:64px;
+    padding-right: 1rem;
+}
+
+
+
+.games{
+    flex-grow: 2;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 5rem;
+}
+
+
+.status{
+    margin-bottom: 3rem;
+    width: 80%;
+}
+
+.status input {
+    margin-bottom: 3rem;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    border: none;
+    border-radius: 0.3rem;
+    width: 80%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.card{
+    background: linear-gradient(to left top,rgba(255,255,255,0.7),rgba(255,255,255,0.5));
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(100,155,155,0.3);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.progress {
+
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 1rem;
+    margin: 0.2rem 0rem;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(210, 230, 230);
+    position: absolute;
+    left: 60%;
+}
+
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.percentage {
+    font-weight: bold;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    /* linear gradient on top of text*/
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
